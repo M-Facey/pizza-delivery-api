@@ -60,7 +60,7 @@ unicorn main:app --reload
 
 - [x] [Intro to Project](https://youtu.be/QQXQAZuJSdw?si=HGsuuJzFYZjHu9YR)
 - [x] [Creating the Project Routes](https://youtu.be/eGsFJbT0ryo?si=9ON0sjohNV7G0Z4F)
-- [ ] Database with SQLAlchemy
+- [x] [Database with SQLAlchemy](https://youtu.be/mPHZKqUgnDU?si=_cjOenSToNAea2A8)
 - [ ] User Creation (Signing up)
 - [ ] JWT Authentication
 - [ ] Placing an order (HTTP POST Request)
