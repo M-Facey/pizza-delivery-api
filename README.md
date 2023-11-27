@@ -15,8 +15,8 @@ Here is a list of all the routes that will be present in the applications.
 | _PUT_      | /api/order/status/`{order_id}` | Update order status       | Super user |
 | _DELETE_   | /api/order/delete/`{order_id}` | Delete/Remove an order    | All users  |
 | _GET_      | /api/user/orders               | Get user's order          | All users  |
-| _GET_      | /api/orders                    | List all orders made      | All users  |
-| _GET_      | /api/orders/`{order_id}`       | Retrieves an order        | All users  |
+| _GET_      | /api/orders                    | List all orders made      | Super user  |
+| _GET_      | /api/orders/`{order_id}`       | Retrieves an order        | Super user  |
 | _GET_      | /api/user/order/`{order_id}`   | Get user's specific order | All users  |
 | _GET_      | /api/docs                      | View API docs             | All users  |
 
