@@ -12,7 +12,7 @@ class User(Base):
     password = Column(Text, nullable = True)
     is_staff = Column(Boolean, default = False)
     is_active = Column(Boolean, default = False)
-    order = Relationship('Order', back_populates = "user")
+    orders = Relationship('Order', back_populates = "user")
 
     def __repr__(self):
         return f"<User {self.username}>"
