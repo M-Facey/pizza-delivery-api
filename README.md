@@ -22,7 +22,39 @@ Here is a list of all the routes that will be present in the applications.
 
 ## How to Run it
 
-TBD
+First you need to ensure you have Python installed. You can choose to either install PostgreSQL on your computer, or use a cloud solution. 
+
+Afterwards, clone the repo and navigate to the route of the project
+```sh
+git clone https://github.com/M-Facey/pizza-delivery-api.git
+```
+
+Create a virtual environment using [pipenv](https://pypi.org/project/pipenv/) or [virtualenv](https://virtualenv.pypa.io/en/latest/installation.html). FOr the example below, I am using command for `virtualenv`
+```sh
+python -m venv env
+```
+
+Install the project dependencies
+```sh
+pip install -r requirements.txt
+```
+
+Create a `.env` file and copy (& modify, if necessary) the values from the `.env.sample` file.
+
+Create the tables in your database
+```sh
+python init_db.py
+```
+
+Finally, run the project either with
+```sh
+unicorn main:app
+```
+
+... or with hot-reloading
+```sh
+unicorn main:app --reload
+```
 
 ## Progress Tracker
 
